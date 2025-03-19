@@ -289,6 +289,7 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Specific Program Cards */
 .academic-card {
   background: url('../assets/images/academics.jpg') no-repeat center center;
@@ -321,4 +322,12 @@ body {
       gap: 1rem;
     }
   }
+
   
+  .map-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
