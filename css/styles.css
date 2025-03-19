@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@ body {
     color: inherit;
   }
   
-  /* Header */
+  
   header {
     background: #2c3e50;
     position: fixed;
@@ -61,7 +61,7 @@ body {
     color: #1abc9c;
   }
   
-  /* Hero Section */
+  
   .hero {
     height: 100vh;
     background: url('hero-background.jpg') center center/cover no-repeat;
@@ -111,7 +111,7 @@ body {
     background: #c0392b;
   }
   
-  /* Sections */
+  
   .section {
     padding: 4rem 2rem;
     background: #fff;
@@ -130,7 +130,7 @@ body {
     margin-bottom: 1rem;
   }
   
-  /* Departments Container */
+  
   .departments-container {
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +139,7 @@ body {
     margin-top: 2rem;
   }
   
-  /* Department Card */
+  
   .department-card {
     position: relative;
   display: block;
@@ -147,14 +147,14 @@ body {
   color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  /* No padding here, so the background image covers the entire element */
+  
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 0;
   }
   
-  /* Transparent overlay for readability */
+  
   .department-card::before {
     content: '';
   position: absolute;
@@ -162,18 +162,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 0;
   }
   
-  /* Card Content Positioned Above Overlay */
+  
   .department-card .card-content {
     position: relative;
     z-index: 1;
-    padding: 2rem; /* Padding for the text content */
+    padding: 2rem;
+    color: #fff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
   }
   
-  /* Hover Effects */
+  
   .department-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -184,13 +186,32 @@ body {
   }
 
   .about-card {
-    background: url('./assets/images/about-bg.jpg') no-repeat center center;
+    background: url("../assets/images/admin.jpg") no-repeat center center;
     background-size: cover;
   }
+
+  .hero{
+    height: 100vh;
+    background: url("../assets/images/hero.jpg")  center center/cover no-repeat;
+  }
+
+  .jhs-card {
+    background: url('../assets/images/jhs.jpg') no-repeat center center;
+    background-size: cover;
+    width: 45%; 
+    min-height: 200px; 
+  }
   
-  /* Card Image (if used inside a card) */
+  .shs-card {
+    background: url('../assets/images/shs.jpg') no-repeat center center;
+    background-size: cover;
+    width: 45%; 
+    min-height: 200px; 
+  }
+  
+  
   .card-image {
-    width: 100px; /* Adjust as needed */
+    width: 100px; 
     height: auto;
     margin-bottom: 1rem;
     opacity: 0.7;
@@ -201,7 +222,7 @@ body {
     opacity: 1;
   }
   
-  /* Footer */
+  
   footer {
     background: #2c3e50;
     color: #fff;
@@ -219,7 +240,7 @@ body {
     margin-bottom: 10px;
   }
   
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .hero h1 {
       font-size: 2.4rem;
