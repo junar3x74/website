@@ -353,3 +353,34 @@ footer {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  
+}
+
+@media (max-width: 768px) {
+  
+  nav ul {
+    
+    flex-direction: row;
+    
+    gap: 1rem;
+    
+    font-size: 0.9rem;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+  }
+
+  
+  .logo img {
+    height: 40px;
+  }
+  .logo span {
+    font-size: 1.5rem;
+  }
+}
