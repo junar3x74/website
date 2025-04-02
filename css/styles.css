@@ -344,3 +344,139 @@ nav ul {
     font-size: 1.5rem;
   }
 }
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.program-card {
+  position: relative;
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 45%;
+  min-height: 250px;
+  text-decoration: none;
+}
+.program-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+.program-card .card-content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.department-card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* Backgrounds for Each Track */
+.stem-card {
+  background: url('../assets/images/stem.jpg') no-repeat center center;
+}
+.abm-card {
+  background: url('../assets/images/abm.jpg') no-repeat center center;
+}
+.humss-card {
+  background: url('../assets/images/humss.jpg') no-repeat center center;
+}
+.gas-card {
+  background: url('../assets/images/gas.jpg') no-repeat center center;
+}
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .program-card {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+
+ /* Container for the subject cards */
+ .departments-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+/* General styles for a clickable department card */
+.department-card-link {
+  position: relative;
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%;
+  min-height: 200px;
+  text-decoration: none;
+}
+.department-card-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+.department-card-link .card-content {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* Background images for each subject card */
+.math-dept {
+  background: url('../assets/images/math_dept.jpg') no-repeat center center;
+}
+.science-dept {
+  background: url('../assets/images/science_dept.jpg') no-repeat center center;
+}
+.english-dept {
+  background: url('../assets/images/english_dept.jpg') no-repeat center center;
+}
+.filipino-dept {
+  background: url('../assets/images/filipino_dept.jpg') no-repeat center center;
+}
+.ap-dept {
+  background: url('../assets/images/araling_dept.jpg') no-repeat center center;
+}
+.mapeh-dept {
+  background: url('../assets/images/mapeh_dept.jpg') no-repeat center center;
+}
+.epp-dept {
+  background: url('../assets/images/epp_dept.jpg') no-repeat center center;
+}
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .department-card-link {
+    width: 100%;
+    min-height: 150px;
+  }
+}
