@@ -191,7 +191,7 @@ nav ul li a:hover {
 
 /* Junior High & Senior High Cards (Desktop) */
 .jhs-card {
-  background: url('../assets/images/jhs.jpg') no-repeat center center;
+  background: url('../assets/images/jhs2.jpg') no-repeat center center;
   background-size: cover;
   width: 45%;
   min-height: 300px;
@@ -200,7 +200,7 @@ nav ul li a:hover {
 }
 
 .shs-card {
-  background: url('../assets/images/shs.jpg') no-repeat center center;
+  background: url('../assets/images/shs2.jpg') no-repeat center center;
   background-size: cover;
   width: 45%;
   min-height: 300px;
@@ -345,6 +345,7 @@ nav ul {
   }
 }
 
+/* Container for the program cards */
 .programs-container {
   display: flex;
   flex-wrap: wrap;
@@ -352,6 +353,8 @@ nav ul {
   justify-content: center;
   margin-top: 2rem;
 }
+
+/* General styles for a program card */
 .program-card {
   position: relative;
   display: block;
@@ -360,11 +363,14 @@ nav ul {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; /* Ensure no repeat */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 45%;
   min-height: 250px;
   text-decoration: none;
 }
+
+/* Overlay for dark effect */
 .program-card::before {
   content: "";
   position: absolute;
@@ -372,9 +378,10 @@ nav ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
+
 .program-card .card-content {
   position: relative;
   z-index: 1;
@@ -382,23 +389,36 @@ nav ul {
   text-align: center;
 }
 
-.department-card-link:hover {
+/* Hover effect */
+.program-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-/* Backgrounds for Each Track */
+
+/* Backgrounds for each track */
+.stem-card,
+.abm-card,
+.humss-card,
+.gas-card {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Assigning images */
 .stem-card {
-  background: url('../assets/images/stem.jpg') no-repeat center center;
+  background-image: url('../assets/images/stem.jpg');
 }
 .abm-card {
-  background: url('../assets/images/abm.jpg') no-repeat center center;
+  background-image: url('../assets/images/abm.jpg');
 }
 .humss-card {
-  background: url('../assets/images/humss.jpg') no-repeat center center;
+  background-image: url('../assets/images/humms.jpg');
 }
 .gas-card {
-  background: url('../assets/images/gas.jpg') no-repeat center center;
+  background-image: url('../assets/images/gas.jpg');
 }
+
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
   .program-card {
@@ -408,14 +428,16 @@ nav ul {
 }
 
 
- /* Container for the subject cards */
- .departments-cards {
+
+/* Container for the subject cards */
+.departments-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
 }
+
 /* General styles for a clickable department card */
 .department-card-link {
   position: relative;
@@ -425,11 +447,14 @@ nav ul {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; /* Ensure no repeat */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 30%;
   min-height: 200px;
   text-decoration: none;
 }
+
+/* Overlay for dark effect */
 .department-card-link::before {
   content: "";
   position: absolute;
@@ -437,9 +462,10 @@ nav ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
+
 .department-card-link .card-content {
   position: relative;
   z-index: 1;
@@ -447,32 +473,52 @@ nav ul {
   text-align: center;
 }
 
-.program-card:hover {
+/* Hover effect */
+.department-card-link:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+
 /* Background images for each subject card */
+.math-dept,
+.science-dept,
+.english-dept,
+.filipino-dept,
+.ap-dept,
+.mapeh-dept,
+.epp-dept,
+.ve-dept {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Assigning images */
 .math-dept {
-  background: url('../assets/images/math_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/math.jpg');
 }
 .science-dept {
-  background: url('../assets/images/science_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/science.jpg');
 }
 .english-dept {
-  background: url('../assets/images/english_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/english.jpg');
 }
 .filipino-dept {
-  background: url('../assets/images/filipino_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/filipino.jpg');
 }
 .ap-dept {
-  background: url('../assets/images/araling_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/ap.jpg');
 }
 .mapeh-dept {
-  background: url('../assets/images/mapeh_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/mapeh.jpg');
 }
 .epp-dept {
-  background: url('../assets/images/epp_dept.jpg') no-repeat center center;
+  background-image: url('../assets/images/tle.jpg');
 }
+.ve-dept {
+  background-image: url('../assets/images/ve.jpg');
+}
+
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
   .department-card-link {
